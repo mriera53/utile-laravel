@@ -1,0 +1,421 @@
+.item img{
+  height: 300px;
+  width: 600px;
+}
+
+
+.logoo {
+  float: left;
+}
+.logoo img{
+  height: 75px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.item h4{
+  color: #2E2E2E;
+  text-align: center;
+}
+
+.row h4{
+  color: #2E2E2E;
+}
+
+
+
+
+
+  /*------------------------GLOBALES------------------------*/
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F7F7F7;
+  font-family: verdana;
+  /*  font-style: serif;*/
+  text-align: left;
+  font-size: 20px;
+}
+ul {
+  padding: 0;
+}
+li a {
+  color: black;
+}
+.form-banner {
+  padding-top: 2%;
+  overflow: hidden;
+}
+.button {
+  border-radius: 6px;
+}
+a {
+    color: #fff;
+}
+.container{
+  width: 100%;
+  margin-right: 0;
+ margin-left: 0;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+/*------------Responsive Resolucion Smartphone-----------*/
+}
+@media(max-width: 320px){
+  }
+
+/*------------Responsive Resolucion Tablet---------------*/
+@media(min-width: 768px){
+  }
+
+/*
+
+/*---------------------BANNER - MENU---------------------*/
+.banner {
+  width: 100% !important;
+  vertical-align: middle !important;
+  background-color: #F37032;
+  overflow: hidden;
+}
+.banner ul {
+  float: right;
+  padding: 1vh;
+}
+.not-login {
+  float: right;
+  clear: right;
+  color: white;
+  margin-bottom: 3px;
+  margin-right: 14px;
+}
+.barra{
+  text-align: right;
+  float: right;
+}
+
+
+/*------------------PREGUNTAS FRECUENTES------------------*/
+.preguntasfrecuentes {
+  background-image: url(../imagenes/background/.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+}
+.preguntas {
+  color: white;
+  margin-left: 20vw;
+  background: rgba(0, 0, 128, 0.5);
+}
+.contenidocentropreguntas {
+    width: 75%;
+    padding-top: 20vh;
+    padding-left: 25%;
+}
+#accordion {
+  min-width: 5vw;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+}
+.panel-primary > .panel-heading {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    border-color: white;
+}
+.panel-primary {
+    border-color: white;
+}
+.panel-collapse{
+  color: orange;
+}
+/*---------------------ESPECIALIDADES---------------------*/
+.especialidades {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.letras{
+  color: black;
+}
+h4 {
+  color: white;
+}
+
+/*----------------------REGISTRARSE----------------------*/
+.tituloreg {
+  margin-top: 20px;
+  text-align: center;
+  color: #2E2E2E;
+  font-family: verdana;
+  font-style: serif;
+}
+
+.form-group{
+  text-align: center;
+  color: #2E2E2E;
+  font-family: verdana;
+  font-style: serif;
+
+}
+
+
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+.main{
+ 	margin:50px 15px;
+}
+h1.title {
+	font-size: 50px;
+	font-family: 'Passion One', cursive;
+	font-weight: 400;
+}
+hr{
+	width: 10%;
+	color: #fff;
+}
+.form-group{
+	margin-bottom: 15px;
+  text-align: center;
+}
+label{
+	margin-bottom: 15px;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+}
+h1.title {
+	font-size: 50px;
+	font-family: 'Passion One', cursive;
+	font-weight: 400;
+}
+hr{
+	width: 10%;
+	color: #fff;
+}
+.form-group{
+	margin-bottom: 15px;
+}
+label{
+	margin-bottom: 15px;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+ 	background-color: orange;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.form-control {
+    height: auto!important;
+padding: 8px 12px !important;
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+#button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 400px;
+  padding: 10px 40px;
+	background:#009edf;
+  color: #FFF;
+  text-shadow: none;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+ -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+ }
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+ }
+.login-button{
+	margin-top: 5px;
+ }
+.login-register{
+	font-size: 11px;
+	text-align: center;
+ }
+
+/*-------------------------LOGIN-------------------------*/
+.loginbody {
+  background-color: white;
+  }
+.main{
+ 	margin:50px 15px;
+  }
+h1.title {
+	font-size: 50px;
+	font-family: 'Passion One', cursive;
+	font-weight: 400;
+  }
+hr{
+	width: 10%;
+	color: #fff;
+  }
+
+li a {
+  color: white;
+}
+.form-group{
+	margin-bottom: 15px;
+}
+label{
+	margin-bottom: 15px;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.form-control {
+    height: auto!important;
+padding: 8px 12px !important;
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+#button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 400px;
+  padding: 10px 40px;
+	background-color:  rgba(255, 255, 255, 0.5);
+  color: #FFF;
+  text-shadow: none;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+ -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+ }
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+ }
+.login-button{
+	margin-top: 5px;
+ }
+.login-register{
+	font-size: 11px;
+	text-align: center;
+ }
+
+/*-------------------------LOGIN-------------------------*/
+.loginbody {
+  background-color: white;
+  margin-top: 20vh;
+}
+
+.login {
+  text-align: center;
+  color: black;
+  margin-bottom: 15px;
+}
+
+
+/*------------------------FOOTER------------------------*/
+
+
+.foooter {
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  color: white;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  bottom: -5px;
+}
+.icon_footer {
+  height: 80px;
+}
+.txt_footer {
+  color: white;
+  text-align: center;
+  font-size: 11px;
+}
