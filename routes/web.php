@@ -14,3 +14,8 @@
 Auth::routes();
 
 Route::get('registro', 'Auth\RegisterController@showRegistrationForm')->name('register');
+
+
+
+
+Route::get('t', 't@t')->name('register');
