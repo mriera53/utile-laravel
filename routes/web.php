@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
+
+Route::get('registro', 'Auth\RegisterController@showRegistrationForm')->name('register');
