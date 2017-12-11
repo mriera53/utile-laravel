@@ -2,7 +2,30 @@
 
 @section('content')
 <div class="container">
+@yield("css")
     <div class="row">
+      <header class="masthead">
+          <div class="banner">
+              <div class="logoo">
+                <a class="nav-link active" href="home.php"><img src="imagenes/logo/utile.png" class="logo" alt=""></a>
+              </div>
+
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="login.php">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="registrarse">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="preguntasfrecuentes.php">FAQ</a>
+                </li>
+              </ul>
+
+          </div>
+      </header>
+
+
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Eventos</div>

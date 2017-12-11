@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\User;
+use Validator;
+
+
+
+
 class ReservaController extends Controller
 {
     /**
@@ -11,15 +17,15 @@ class ReservaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-public function reserva() {
- 	$reserva = \App\Reserva::all();
+  public function reserva() {
+   	$reservas = \App\Reserva::all();
 
- 	$variables = [
- 		"reserva" => $reserva
- 	];
+   	$variables = [
+   		"reservas" => $reservas
+   	];
 
- 	return view('reserva', $variables);
- }
+   	return view('reserva', $variables);
+   }
 
 
     /**
@@ -29,7 +35,7 @@ public function reserva() {
      */
     public function create()
     {
-        //
+       return view('reserva.create');
     }
 
     /**
@@ -40,8 +46,30 @@ public function reserva() {
      */
     public function store(Request $request)
     {
-        //
-    }
+          $rules = [
+              "fecha" => "required|date",
+              "cantidadDePersonas" => "required|numeric",
+              "ubicacion" => "required|string",
+              "tipoDeFiesta" => "required|string"
+          ];
+
+          $messages = [
+              "required" => "El :attribute es requerido!",
+              "numeric" => "El :attribute tiene que ser numérico!",
+          ];
+
+          $this->validate($request, $rules, $messages);
+
+          $reserva = \App\Reserva::create([
+              'fecha' => $request->input('fecha'),
+              'cantidadDePersonas' => $request->input('cantidadDePersonas'),
+              'ubicacion' => $request->input('ubicacion'),
+              'tipoDeFiesta' => $request->input('tipoDeFiesta')
+          ]);
+
+          return redirect('/reserva');
+      }
+
 
     /**
      * Display the specified resource.
@@ -52,7 +80,13 @@ public function reserva() {
     public function show($id)
     {
         $reserva = \App\Reserva::find($id);
-    }
+//dd($reserva);
+        $variables = [
+    "reserva" => $reserva];
+
+	return view('reserva.show', $variables);
+}
+
 
     /**
      * Show the form for editing the specified resource.
@@ -60,9 +94,13 @@ public function reserva() {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function editar($id)
     {
-        //
+      $reserva = \App\Reserva::find($id);
+
+    $datos = compact("reserva");
+
+    return view("editarReserva", $datos);
     }
 
     /**
@@ -72,10 +110,36 @@ public function reserva() {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $req, $id)
     {
-        //
-    }
+      $rules = [
+          "fecha" => "required|date",
+          "cantidadDePersonas" => "required|numeric",
+          "ubicacion" => "required|string",
+          "tipoDeFiesta" => "required|string"
+      ];
+
+      $messages = [
+          "required" => "La :attribute es requerido!",
+          "numeric" => "La :attribute tiene que ser numérico!",
+      ];
+
+      $this->validate($req, $rules, $messages);
+
+
+      $reserva = \App\Reserva::find($id);
+      $reserva->cantidadDePersonas = $req["cantidadDePersonas"];
+      $reserva->tipoDeFiesta = $req["tipoDeFiesta"];
+      $reserva->ubicacion = $req["ubicacion"];
+      $reserva->fecha = $req["fecha"];
+
+      $reserva->save();
+
+
+      //4. Redirigir
+      return redirect("/reserva");
+}
+
 
     /**
      * Remove the specified resource from storage.
@@ -83,8 +147,11 @@ public function reserva() {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function eliminar($id)
     {
-        //
+      $reserva = \App\Reserva::find($id);
+      $reserva->delete();
+
+return redirect("/reserva");
     }
 }

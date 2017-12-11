@@ -7,7 +7,7 @@
     </head>
     <body>
     <ul>
-        @foreach ($reserva as $reservas)
+        @foreach ($reservas as $reserva)
 			<li>{{$reserva}}</li>
 		@endforeach
     </ul>
