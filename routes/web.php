@@ -44,3 +44,10 @@ Route::get("eliminarReserva/{id}", "ReservaController@eliminar");
 
 
  Route::get('/reserva/{id}', 'ReservaController@show');
+
+
+ // base de datos
+ Route::get('/productos', 'ProductosController@productos');
+ // agregar productos
+ Route::get('/productos/agregar', 'ProductosController@create');
+ Route::post('/productos/agregar', 'ProductosController@store');
