@@ -12,10 +12,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('plantilla/css/one-page-wonder.css') }}" rel="stylesheet">
-    <link href="{{ asset('plantilla/bootstrap/css/bootstrap-grid.css') }}" rel="stylesheet">
-    <link href="{{ asset('plantilla/bootstrap/css/bootstrap-grid.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('plantilla/bootstrap/css/bootstrap-reboot.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/docs.theme.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style01.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

@@ -5,12 +5,11 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Eventos</div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="/home">
                         {{ csrf_field() }}
-
+@include('header')
                         <div class="container">
 
                     		<section class="form-banner">
@@ -30,7 +29,10 @@
                     					</div>
                     				</form>
                     			</div>
+
                     	  </section>
+
+
                         <section id="catering">
                           <div class="row">
                             <div class="large-12 columns">
