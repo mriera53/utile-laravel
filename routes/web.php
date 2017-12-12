@@ -24,7 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Eventos
 Route::resource('/eventos', 'EventosController');
 
-
 // base de datos
 Route::get('/reserva', 'ReservaController@reserva');
 
