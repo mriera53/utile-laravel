@@ -55,7 +55,7 @@ class ProductosController extends Controller
 
           $this->validate($request, $rules, $messages);
 
-          $reserva = \App\Productos::create([
+          $productos = \App\Productos::create([
               'servicio' => $request->input('servicio'),
               'disponibilidad' => $request->input('disponibilidad'),
               'anosExperiencia' => $request->input('anosExperiencia'),
@@ -63,7 +63,6 @@ class ProductosController extends Controller
               'name' => $request->input('name'),
               'precioXhora' => $request->input('precioXhora')
           ]);
-
           return redirect('/productos');
       }
 
