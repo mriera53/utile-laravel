@@ -5,11 +5,10 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-
+@include('header')
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="/home">
                         {{ csrf_field() }}
-@include('header')
                         <div class="container">
 
                     		<section class="form-banner">
@@ -40,7 +39,7 @@
                             	<h4 style="text-align: right">Ver todo</h4>
                               <div class="owl-carousel owl-theme">
                                 <div class="item">
-                                  <img src="imagenes/catering/cat1.jpg" alt="Catering1" >
+                                  <img src="/imagenes/catering/cat1.jpg" alt="Catering1" >
                                   <h4>PICADITAS</h4>
                                 </div>
                                 <div class="item">
@@ -60,32 +59,9 @@
                                   <h4>DULZONES</h4>
                                 </div>
                               </div>
+                              <a class="button" name="button" href='/productos/agregar'> Agregar producto </a>
 
-                              <script>
-                                $(document).ready(function() {
-                                  $('.owl-carousel').owlCarousel({
-                                    loop: true,
-                                    margin: 10,
-                                    responsiveClass: false,
-                                    responsive: {
-                                      0: {
-                                        items: 2,
-                                        nav: true
-                                      },
-                                      600: {
-                                        items: 3,
-                                        nav: false
-                                      },
-                                      1000: {
-                                        items: 3,
-                                        nav: true,
-                                        loop: false,
-                                        margin: 20
-                                      }
-                                    }
-                                  })
-                                })
-                              </script>
+
                             </div>
                           </div>
                         </section>
@@ -129,32 +105,9 @@
                     	            <h4>Barra8</h4>
                     	          </div>
                     	        </div>
+                            <a class="button" name="button" href='/productos/agregar'> Agregar producto </a>
 
-                    	        <script>
-                    	          $(document).ready(function() {
-                    	            $('.owl-carousel').owlCarousel({
-                    	              loop: true,
-                    	              margin: 10,
-                    	              responsiveClass: false,
-                    	              responsive: {
-                    	                0: {
-                    	                  items: 2,
-                    	                  nav: true
-                    	                },
-                    	                600: {
-                    	                  items: 3,
-                    	                  nav: false
-                    	                },
-                    	                1000: {
-                    	                  items: 3,
-                    	                  nav: true,
-                    	                  loop: false,
-                    	                  margin: 20
-                    	                }
-                    	              }
-                    	            })
-                    	          })
-                    	        </script>
+
                     	      </div>
                     	    </div>
                     	  </section>
@@ -191,32 +144,8 @@
                                       <h4>LUCSON</h4>
                                     </div>
                                   </div>
+                              <a class="button" name="button" href='/productos/agregar'> Agregar producto </a>
 
-                                  <script>
-                                    $(document).ready(function() {
-                                      $('.owl-carousel').owlCarousel({
-                                        loop: true,
-                                        margin: 10,
-                                        responsiveClass: false,
-                                        responsive: {
-                                          0: {
-                                            items: 2,
-                                            nav: true
-                                          },
-                                          600: {
-                                            items: 3,
-                                            nav: false
-                                          },
-                                          1000: {
-                                            items: 3,
-                                            nav: true,
-                                            loop: false,
-                                            margin: 20
-                                          }
-                                        }
-                                      })
-                                    })
-                                  </script>
                                 </div>
                               </div>
                             </section>
@@ -230,4 +159,101 @@
         </div>
     </div>
 </div>
+
+
+
+<script>
+  $(document).ready(function() {
+
+
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: false,
+        responsive: {
+          0: {
+            items: 2,
+            nav: true
+          },
+          600: {
+            items: 3,
+            nav: false
+          },
+          1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 20
+          }
+        }
+      })
+
+      /*
+
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: false,
+        responsive: {
+          0: {
+            items: 2,
+            nav: true
+          },
+          600: {
+            items: 3,
+            nav: false
+          },
+          1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 20
+          }
+        }
+      })
+
+
+
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: false,
+        responsive: {
+          0: {
+            items: 2,
+            nav: true
+          },
+          600: {
+            items: 3,
+            nav: false
+          },
+          1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 20
+          }
+        }
+      })
+
+
+      */
+
+
+
+
+
+
+
+
+
+
+
+})
+
+
+
+
+
+</script>
 @endsection

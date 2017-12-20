@@ -1,11 +1,13 @@
+@extends('layouts.app')
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{$productos->servicio}}</title>
-  </head>
-  <body>
+
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+@include('header')
+
 
   <h1>Mi nombre es: {{$productos->name}}</h1>
   <ul>
@@ -29,3 +31,4 @@
   </a>
 </body>
 </html>
+@endsection

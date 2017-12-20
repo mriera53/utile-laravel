@@ -11,11 +11,25 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="{{ asset('css/docs.theme.min.css') }}" rel="stylesheet">
+
+
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/docs.theme.min.css') }}" rel="stylesheet">
+
+
+
     <link href="{{ asset('css/style01.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
+    <script src="{{ asset('js/owl.carousel.js') }}"></script>
+
 </head>
 <body>
     <div id="app">
@@ -78,7 +92,9 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+
+
+
+
 </body>
 </html>

@@ -12,14 +12,55 @@
 */
 
 Auth::routes();
+Route::get('logout', 'Auth\LoginController@logout');
+/*
+// Authentication Routes...
+$this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
+$this->post('login', 'Auth\LoginController@login');
+$this->post('logout', 'Auth\LoginController@logout')->name('logout');
 
+// Registration Routes...
+$this->get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+$this->post('register', 'Auth\RegisterController@register');
+
+// Password Reset Routes...
+$this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+$this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+$this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+$this->post('password/reset', 'Auth\ResetPasswordController@reset');
+*/
+
+
+
+
+
+
+
+
+
+/*
 Route::get('registro', 'Auth\RegisterController@showRegistrationForm')->name('register');
 
 Route::get('t', 't@t')->name('register');
 
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+*/
+
+
+
+
+
+
+
 //inicio
 Route::resource('home', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/', 'HomeController@index')->name('home');
+
 
 // Eventos
 Route::resource('/eventos', 'EventosController');
