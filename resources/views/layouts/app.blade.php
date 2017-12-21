@@ -13,23 +13,37 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="{{ asset('css/docs.theme.min.css') }}" rel="stylesheet">
+<<<<<<< HEAD
 <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/style01.css') }}" rel="stylesheet">
+=======
+
+>>>>>>> 68dfbe12ab661bd9cb251749cae0af45e7a777a5
 
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
 
 
 
+<<<<<<< HEAD
+=======
+    <link href="{{ asset('css/style01.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
+
+
+>>>>>>> 68dfbe12ab661bd9cb251749cae0af45e7a777a5
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 
     <script src="{{ asset('js/owl.carousel.js') }}"></script>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 68dfbe12ab661bd9cb251749cae0af45e7a777a5
 </head>
 <body>
 
@@ -66,7 +80,11 @@
 
     </div>
 
+<<<<<<< HEAD
     <!-- Scripts -->
+=======
+
+>>>>>>> 68dfbe12ab661bd9cb251749cae0af45e7a777a5
 
 
 

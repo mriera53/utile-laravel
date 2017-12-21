@@ -1,13 +1,14 @@
-<html>
-    <head>
-        <title>Agregar Producto</title>
-        <link rel="stylesheet" type="text/css" href="/css/app.css">
-        <style type="text/css">
-            div {margin-top: 20px}
-            body {padding: 20px}
-        </style>
-    </head>
-    <body>
+@extends('layouts.app')
+
+
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+@include('header')
+
+
 
         @if (count($errors))
             <ul>
@@ -54,5 +55,7 @@
 
             <input type="submit" value="Agregar Producto" name="submit"/>
         </form>
-    </body>
-</html>
+
+
+
+@endsection
