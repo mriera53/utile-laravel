@@ -9,11 +9,68 @@
             <div class="panel panel-default">
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="/home">
+<!--                  <form class="form-horizontal" method="POST" action="/home"-->
+                  <form class="form-horizontal" method="POST" action="/reserva/agregar">
                         {{ csrf_field() }}
 
                         <div class="container">
+<!--
+1----------------------- desde create.blade.php
+                          <form id="agregarReserva" name="agregarReserva" method="POST" action="/reserva/agregar" enctype="multipart/form-data">
+                              {{ csrf_field() }}
+                              <div>
+                                  <label for="fecha">Fecha De Evento</label>
+                                  <input type="date" value="{{ old('fecha') }}" name="fecha" id="fecha"/>
+                              </div>
+                              <div>
+                                  <label for="cantidadDePersonas">Cantidad De Personas</label>
+                                  <input type="number" value="{{ old('cantidadDePersonas') }}" name="cantidadDePersonas" id="cantidadDePersonas"/>
+                              </div>
+                              <div>
+                                  <label for="ubicacion">Ubicacion</label>
+                                  <input type="text"  value="{{ old('ubicacion') }}" name="ubicacion" id="ubicacion"/>
+                              </div>
+                              <div>
+                                  <label for="tipoDeFiesta">Tipo De Fiesta</label>
+                                  <input type="text" value="{{ old('tipoDeFiesta') }}"   name="tipoDeFiesta" id="tipoDeFiesta"/>
+                              </div>
+                              <input type="submit" value="Agregar Reserva" name="submit"/>
+                          </form>
+1--------------------------->
 
+@if (count($errors))
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+@endif
+
+<section class="form-banner">
+  <div class="row">
+    <form class="form-inline col-md-8 col-md-offset-2" action="/reserva/agregar" method="post">
+      <div class="form-group col-md-3">
+        <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Fecha De Evento" value=""/>
+      </div>
+      <div class="form-group col-md-3">
+        <input type="number" class="form-control" id="cantidadDePersonas" name="cantidadDePersonas" placeholder="Cantidad Personas" value=""/>
+      </div>
+      <div class="form-group col-md-3">
+        <input type="text" class="form-control" id="ubicacion" name="ubicacion" placeholder="ubicacion" value=""/>
+      </div>
+      <div class="form-group col-md-3">
+        <input type="text" class="form-control" id="tipoDeFiesta" name="tipoDeFiesta" placeholder="Tipo Fiesta" value=""/>
+      </div>
+      <div class="form-group col-md-3">
+        <input type="submit" value="Enviar" name="submit"/>
+      </div>
+    </form>
+  </div>
+
+</section>
+
+
+<!-- 2--------------------------- Situación anterior a la modificación
                     		<section class="form-banner">
                     			<div class="row">
                     				<form class="form-inline col-md-8 col-md-offset-2" action="index.html" method="post">
@@ -33,7 +90,7 @@
                     			</div>
 
                     	  </section>
-
+2---------------------------->
 
                         <section id="catering">
                           <div class="row">

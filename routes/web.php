@@ -20,6 +20,7 @@ Route::get('t', 't@t')->name('register');
 //inicio
 Route::resource('home', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/home/{id}', 'HomeController@store')->name('home');
 
 // Eventos
 Route::resource('/eventos', 'EventosController');
@@ -28,7 +29,7 @@ Route::resource('/eventos', 'EventosController');
 Route::get('/reserva', 'ReservaController@reserva');
 
 Route::get('cantidadDePersonas', 'ReservasController@index');
-Route::get('/ubicacion', 'ReservasController@index');
+Route::get('/ubicacion', 'ReservaController@index');
 Route::get('/tipoDeFiesta', 'ReservasController@index');
 
 // agregar reserva

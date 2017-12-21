@@ -50,11 +50,11 @@ class ReservaController extends Controller
               "fecha" => "required|date",
               "cantidadDePersonas" => "required|numeric",
               "ubicacion" => "required|string",
-              "tipoDeFiesta" => "required|string"
+//              "tipoDeFiesta" => "required|string"
           ];
 
           $messages = [
-              "required" => "El :attribute es requerido!",
+              "required" => "El :attribute es requerido!!",
               "numeric" => "El :attribute tiene que ser numérico!",
           ];
 
@@ -120,7 +120,7 @@ class ReservaController extends Controller
       ];
 
       $messages = [
-          "required" => "La :attribute es requerido!",
+          "required" => "La :attribute es requerido!!!",
           "numeric" => "La :attribute tiene que ser numérico!",
       ];
 
